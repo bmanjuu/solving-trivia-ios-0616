@@ -5,5 +5,6 @@
 @property (strong, nonatomic) UIWindow *window;
 
 - (NSString *)solveTrivia;
+-(NSArray *)obtainLettersFromString:(NSString *)string; 
 
 @end
