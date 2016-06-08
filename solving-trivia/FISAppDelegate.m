@@ -77,6 +77,20 @@
         if(!(lettersInCommon)){
             triviaAnswer = state;
         }
+        
+//        for(NSUInteger i=0; i<[stateLetters count]; i++){
+//            if([capitalLetters containsObject:stateLetters[i]]){
+//                break; //exit the loop if capitalLetters and stateLetters have letters in common
+//            }
+//            else {
+//                triviaAnswer = state; //if they don't have any letters in common, assign state as triviaAnswer
+//            }
+//            
+//            if(i == [stateLetters count]-1 && [triviaAnswer isEqualToString:state]){
+//                return triviaAnswer;
+//            //if upon reaching the end of the stateLetters array, triviaAnswers is still equal to the state it is looping through, then trivia answer is that state. this if-statement helps to address the issue where stateLetters[i] may not be in capitalLetters but another stateLetters[x] further down the line is found in capitalLetters. So in the previous else statement where state was assigned to triviaAnswer, we are temporarily making the state the answer until something else proves it wrong (such as another letter within the stateLetters that is found in capitalLetters).
+//            }
+//        }
     }
     
     return triviaAnswer;
